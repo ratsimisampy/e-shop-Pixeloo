@@ -1,11 +1,11 @@
 # Pixeloo
-Plateforme d'échange de matériel photo
-
-###### Lien du site :
+Pixeloo is an online place for exchanging all kinds of material related with digital photography.
+This project have been developped within 2 weeks of full time coding by a team of 4 developpers.
+###### online url :
 
 http://pixeloosave.herokuapp.com
 
-###### Mode de fonctionnement :
+###### How does it work :
 1 - Bob ajoute son nouvel appareil photo Canon sur Pixeloo ici : https://pixeloosave.herokuapp.com/users/edit (bas de page)
 
 2. Sophie veut louer le Canon de Bob, elle l'ajoute à son panier et passe la commande
@@ -17,19 +17,19 @@ http://pixeloosave.herokuapp.com
 5. Bob et Sophie recoivent un email qui les informe que la commande est confirmée et que leurs coordonées respectives sont disponibles sur Pixeloo
 
 
-###### Scénario de test :
+###### Testing scenario :
 
 1. Créer un utilisateur avec un email valide et ajouter un appareil photo
 2. Créer un second utilisateur avec un email validé et louer cet appareil photo
 
 
-###### Carte de crédit de test :
+###### Usefull for Stripe :
 
 - 4242 4242 4242 4242
 - a three-digit CVC
 - any expiry date in the future
 
-###### En cas de difficulté pour cloner et migrer :
+###### Might be usefull when rails running the project on your local machine :
 1. décommenter l'initializer stripe
 2. $ EDITOR="subl --wait" bin/rails credentials:edit
           afin d'ajouter vos credentials pour :
@@ -52,56 +52,42 @@ http://pixeloosave.herokuapp.com
 
 ## Le projet
 
-### Features de base
+### M V P
 
-Comporte les fonctionalités de base d'un site e-commerce. A savoir de manière exhaustive :
-- la gestion de l'authentification
-- la gestion des rôles utilisateurs , administrateur ou utilisateur lambda
-- le workflow d'un utilisateur owner est différent de celui d'un customer
-- les envois de mails à différentes étapes d'un commande
-- la recherche par titre
-...
+It contains basic features :
+- session authentification
+- users administration , with administrator, authetified and non authentified user.
+- both owner and consumer's workflow
+- mailer
+- a basic search form
 
-### Features évoluées
+### Advanced features
 
-- Un système de géolocalisation par ville de chaque matériel enregistré
-- système de paiment Stripe
+- geolocalisation system with Gem Geocoder
+- Checkout online with Stripe
 
-## Organisation autour du projet
+### branches 
 
-### les branches
-
-- élément essentiel de notre organisation, nous avons adopté la structure suivante :
+- we adopt the following workflow
 
 ├── master
   ├── development
-    ├── alexis
+    ├── Username
       ├── feature1
       ├── feature2
       ├── ...
       ├── featureN
-    ├── enes
-      ├── feature1
-      ├── feature2
-      ├── ...
-      ├── featureN
-    ├── rado
-      ├── feature1
-      ├── feature2
-      ├── ...
-      ├── featureN
-    ├── vivien
-      ├── feature1
-      ├── feature2
-      ├── ...
-      ├── featureN
+
+- each team member had to create a personnal branch, had to update his "Username" branch with the last version of "development" branch before pushing his last commitment on "development"
+- Every last commit had to be tested on "development" before pushing on "master"
+' "Master" is the one we finally put on Heroku.
      
 ## La TEAM
 
-- @Enes, le Yankee, notre désormais pro du seed et modèle photo à ses heures perdues ;)
-- @Alexi, Alias l'Eclaireur est notre spécialiste du front.
-- @Vivien, le Cerveau, sans qui nous n'aurions pas survécu ces 2 semaines.
-- @Rado, alias le Sage, celui qui a l'idée de ce projet.
+- @Enes
+- @Alexis
+- @Vivien
+- @Rado
 
 ## Pour le futur
 
