@@ -29,7 +29,7 @@ http://pixeloosave.herokuapp.com
 - a three-digit CVC
 - any expiry date in the future
 
-###### Might be usefull when rails running the project on your local machine :
+###### Some tips that might be usefull when running the project on your local machine :
 1. décommenter l'initializer stripe
 2. $ EDITOR="subl --wait" bin/rails credentials:edit
           afin d'ajouter vos credentials pour :
@@ -56,10 +56,11 @@ http://pixeloosave.herokuapp.com
 
 It contains basic features :
 - session authentification
-- users administration , with administrator, authetified and non authentified user.
+- users administration , with administrator, authentified and non authentified user.
 - both owner and consumer's workflow
 - mailer
 - a basic search form
+- item by category
 
 ### Advanced features
 
@@ -68,7 +69,7 @@ It contains basic features :
 
 ### branches 
 
-- we adopt the following workflow
+- we adopted the following workflow
 
 ├── master
   ├── development
@@ -84,10 +85,10 @@ It contains basic features :
      
 ## La TEAM
 
-- @Enes
-- @Alexis
-- @Vivien
-- @Rado
+- @Enes (front)
+- @Alexis (front)
+- @Vivien (back)
+- @Rado (back)
 
 ## Pour le futur
 
