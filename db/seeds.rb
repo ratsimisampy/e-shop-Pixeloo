@@ -11,7 +11,7 @@ a = "In partes multatione vel militarium fovisse fovisse damnabatur suos postula
 
 1.times do |user|
 
-users = User.create!(email: "vivien.richaud@gmail.com", password: "test123456", password_confirmation: "test123456", first_name: "Loulou", last_name: "Pixeloo")
+users = User.create!(email: "ratsimisampy@gmail.com", password: "test123456", password_confirmation: "test123456", first_name: "Loulou", last_name: "Pixeloo")
 
 end
 
