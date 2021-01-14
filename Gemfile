@@ -71,7 +71,7 @@ gem 'stripe'
 gem "aws-sdk-s3", require: false
 
 gem 'remotipart', github: 'mshibuya/remotipart'
-gem 'rails_admin', '~> 1.3'
+gem 'rails_admin', '~> 1.4'
 gem 'cancancan'
 
 gem 'geocoder'
